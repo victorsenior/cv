@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Victor's personal</title>
+    <style>
+        table,
+        td,
+        th {
+            /* this is how you would give the borders of a table some style */
+            border: 1px solid black;
+            border-spacing: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="./lol/plant2.jpeg" alt="noo">
+    <h1>Victor Senior</h1>
+    <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong><a href="#">Delectus, cumque!</a></strong></em></p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <hr>
+    <h3>Something</h3>
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ul>
+    <ol>
+        <li><a href="#">Me</a></li>
+        <li><a href="#">You</a></li>
+        <li>Woo</li>
+    </ol>
+    <table>
+        <thead>
+            <!-- this is similar to tfoot but instead it is for the head of the table, even when you put it on the bottom of the table, the browser will put it on the top of the table -->
+            <tr>
+                <td colspan="3">This is important</td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- this is the body of the table -->
+            <tr>
+                <!-- this will create a row and everything inside will be columns -->
+                <th>First Column</th>
+                <!-- this is like heading, the best practice is to use this to give the
+         title to the column -->
+                <th>Second Column</th>
+                <th>Third Column</th>
+            </tr>
+            <tr>
+                <td>Jose belongs to 1st</td>
+                <td>Maria belongs to 2nd </td>
+                <td rowspan="2">Victor belongs to 3rd</td>
+                <!-- in order for rowspan to work, it must have the table rows to support it -->
+            </tr>
+            <tr>
+                <td>Jose belongs to 1st</td>
+                <!-- this is like paragraph, the best practice is to use this to give
+         information -->
+                <td>Maria belongs to 2nd</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- this will make the tr the footer, even if you put it on the top it will drop down to the bottom of the table -->
+            <tr>
+                <td colspan="3">This is a footer</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <td colspan="2">Skills</td>
+                <td colspan="2">Skills</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>3</td>
+                <td>JS</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>3</td>
+                <td>Node</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <form action="">
+        <label for="name">Your name</label>
+        <input type="text" name="name" id="name">
+        <input type="color">
+        <input type="file">
+        <input type="submit">
+    </form>
+</body>
+
+</html>
